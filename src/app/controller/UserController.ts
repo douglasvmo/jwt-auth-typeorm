@@ -1,8 +1,15 @@
 import { Request, Response } from 'express'
-import { getRepository, Repository } from 'typeorm'
+import { getRepository } from 'typeorm'
+
+
 import User from '../model/User'
 
 class UsserController {
+  index(req: Request, res: Response) {
+    return res.json({ "userId": req.userId })
+
+  }
+
   async store(req: Request, res: Response) {
     const repository = getRepository(User)
     const { email, password } = req.body;
