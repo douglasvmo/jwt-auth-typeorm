@@ -1,4 +1,6 @@
-# Awesome Project Build with TypeORM
+# JWT Auth TypeORM
+
+This project is an JSON Web Token Authentication Build with TypeORM and is provided for educational purposes only.
 
 Steps to run this project:
 
